@@ -19,6 +19,9 @@
                     session_unset();
                     session_abort();
                 }
+                else{
+                    echo "Ошибка при сохранении";
+                }
             }catch(Exception $e){
                 echo $e->getMessage();
             }
